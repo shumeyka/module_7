@@ -3,8 +3,8 @@ const person = {
 	lastName: 'Dr',
 }
 
-function setFullName(fullName) {
-	this.fullName = fullName
+function setFullName(name) {
+	this.fullName = name
 }
 
 const setPersonFullName = setFullName.bind(person)

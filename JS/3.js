@@ -13,16 +13,29 @@ const user3 = {
 	age: 21,
 }
 
-const users = [user1, user2, user3]
+const users = [
+	{
+		name: 'Артём',
+		age: 18,
+	},
+	{
+		name: 'Егор',
+		age: 17,
+	},
+	{
+		name: 'Лёша',
+		age: 21,
+	},
+]
 
-const usersAge = users.filter(num => {
-	return num.age >= 18
+const usersAge = users.filter(user => {
+	return user.age >= 18
 })
 
 console.log(usersAge)
 
-const usersName = users.map(num => {
-	return num.name
+const usersName = users.map(user => {
+	return user.name
 })
 
 console.log(usersName)
